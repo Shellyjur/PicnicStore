@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/picnicbackground">
+    <RelativeLayout android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:fontFamily="@font/permanent_marker"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="40sp"/>
+        <RelativeLayout android:layout_height="match_parent"
+            android:layout_width="match_parent">
+            <TextView android:id="@+id/persondetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="29dp"
+                android:layout_marginTop="65dp"
+                android:paddingStart="25dp"
+                android:background="@color/Pink"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:fontFamily="@font/boogaloo"
+                />
+
+            <EditText
+                android:id="@+id/chooseyourorder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/persondetails"
+                android:layout_marginLeft="29dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/Pink"
+                android:fontFamily="@font/boogaloo"
+                android:paddingStart="40dp"
+                android:text="@string/chooseyourorder"
+                android:textSize="25sp" />
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/chooseyourorder"
+                android:layout_marginLeft="29dp"
+                android:layout_marginRight="30dp"
+
+                android:background="@color/Pink">
+
+                <TableRow
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp">
+
+                    <ImageView
+                        android:id="@+id/winebottle"
+                        android:layout_marginLeft="45dp"
+                        android:layout_marginRight="30dp"
+                        android:src="@drawable/whinebottle" />
+
+                    <ImageView
+                        android:id="@+id/bread"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="40dp"
+                        android:src="@drawable/bread" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:fontFamily="@font/boogaloo"
+                        android:text="@string/Redwine"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:fontFamily="@font/boogaloo"
+                        android:text="@string/WhiteBread"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:fontFamily="@font/boogaloo"
+                        android:text="@string/pickamount"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:fontFamily="@font/boogaloo"
+                        android:text="@string/pickamount"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <TableRow>
+
+                    <EditText
+                        android:id="@+id/wineamount"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/edittext"
+                        android:fontFamily="@font/boogaloo"
+                        android:inputType="number"
+                        android:paddingStart="10dp"/>
+
+                    <EditText
+                        android:id="@+id/breadamount"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/edittext"
+                        android:fontFamily="@font/boogaloo"
+                        android:inputType="number"
+                        android:paddingStart="10dp"/>
+                </TableRow>
+
+                <TableRow android:layout_marginTop="30dp">
+
+                    <ImageView
+                        android:layout_height="75dp"
+                        android:src="@drawable/platecheese" />
+
+                    <ImageView
+                        android:layout_height="75dp"
+                        android:src="@drawable/basket" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:fontFamily="@font/boogaloo"
+                        android:text="@string/cheeseplate"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:fontFamily="@font/boogaloo"
+                        android:text="@string/BasketandTable"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="40dp"
+                        android:fontFamily="@font/boogaloo"
+                        android:text="@string/pickamount"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:fontFamily="@font/boogaloo"
+                        android:text="@string/pickamount"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:textColor="@color/black" />
+                </TableRow>
+
+                <TableRow android:layout_marginBottom="20dp">
+
+                    <EditText
+                        android:id="@+id/cheeseamount"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/edittext"
+                        android:fontFamily="@font/boogaloo"
+                        android:inputType="number"
+                        android:paddingStart="10dp"/>
+
+                    <EditText
+                        android:id="@+id/basketamount"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:background="@drawable/edittext"
+                        android:fontFamily="@font/boogaloo"
+                        android:inputType="number"
+                        android:paddingStart="10dp"/>
+                </TableRow>
+            </TableLayout>
+
+            <Button
+                android:id="@+id/orderbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/table"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/shape_selector"
+                android:fontFamily="@font/boogaloo"
+                android:text="@string/order"
+                android:textSize="20sp"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:id="@+id/ordersummarytxt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="@string/ordersummary"
+                android:layout_below="@+id/table"
+                android:background="@color/Pink"
+                android:textSize="25sp"
+                android:fontFamily="@font/boogaloo"
+                android:layout_marginLeft="29dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/black"
+                android:paddingStart="40dp"/>
+            <TextView
+                android:id="@+id/scroll"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/ordersummarytxt"
+                android:background="@color/Pink"
+                android:textSize="18sp"
+                android:fontFamily="@font/boogaloo"
+                android:layout_marginLeft="29dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/black"
+                android:paddingStart="40dp"/>
+
+            <LinearLayout
+                android:id="@+id/tabledynamic"
+                android:layout_below="@id/scroll"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="29dp"
+                android:layout_marginRight="30dp"
+                android:paddingStart="110dp"
+                android:background="@color/Pink"/>
+            <Button
+            android:id="@+id/finish"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabledynamic"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/shape_selector"
+            android:fontFamily="@font/boogaloo"
+            android:text="@string/finish"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</ScrollView>
+
+
+

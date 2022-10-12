@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/picnicbackground">
+
+    <TextView
+        android:id="@+id/thankutxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/Pink"
+        android:fontFamily="@font/boogaloo"
+        android:paddingStart="80dp"
+        android:paddingTop="20dp"
+        android:text="@string/Thanku"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+    <ImageView
+        android:id="@+id/picnicimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thankutxt"
+        android:background="@color/Pink"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="29dp"
+        android:src="@drawable/frontphoto"/>
+    <TextView
+        android:id="@+id/rateplease"
+        android:layout_below="@+id/picnicimage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="30dp"
+        android:paddingTop="20dp"
+        android:paddingStart="80dp"
+        android:paddingBottom="20dp"
+        android:background="@color/Pink"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:fontFamily="@font/boogaloo"
+        android:text="@string/pleaserate"/>
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rateplease"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="30dp"
+        android:numStars="5"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/submitrating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rating"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/Pink"
+        android:fontFamily="@font/boogaloo"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/submitrating"
+        android:textSize="25sp"
+        android:textColor="@color/black"/>
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/picnicbackground">
+<RelativeLayout
+    android:id="@+id/layoutfirst"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="10dp">
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="45dp"
+        android:fontFamily="@font/permanent_marker"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="40sp"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/layoutsecond"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="29dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="65dp"
+        android:background="@color/Pink">
+
+        <TextView
+            android:id="@+id/Welcome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/boogaloo"
+            android:text="@string/Welcome"
+            android:textColor="@color/black"
+            android:textSize="35dp" />
+
+        <ImageView
+            android:id="@+id/frontphoto"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_below="@+id/Welcome"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/frontphoto" />
+
+        <TextView
+            android:id="@+id/LegalMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frontphoto"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="@font/boogaloo"
+            android:paddingStart="5dp"
+            android:text="@string/LegalAge"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/Confirm_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LegalMessage"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/shape_selector"
+            android:fontFamily="@font/boogaloo"
+            android:text="@string/Confirm"
+            android:textColor="@color/black" />
+
+
+        <Button
+            android:id="@+id/Decline_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LegalMessage"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/Confirm_btn"
+            android:background="@drawable/shape_selector"
+            android:fontFamily="@font/boogaloo"
+            android:text="@string/Decline"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/messageAcordingPress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Confirm_btn"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:fontFamily="@font/boogaloo"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/messageAcordingPress"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="35dp"
+            android:orientation="vertical" />
+
+        <TextView
+            android:id="@+id/storeinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/messageAcordingPress"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="115dp"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/boogaloo"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/deliveryinfo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/storeinfo"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="40dp"
+            android:fontFamily="@font/boogaloo"
+            android:paddingBottom="20dp"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>
+</ScrollView>
